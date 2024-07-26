@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Presupuesto de Viaje</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Incluir la librería Lodash desde CDN en el <head> -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="titulo"> 
+            <h1>Fly For Sky</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/servicio.html">Servicios</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Calculador de Presupuesto de Viaje</h1>
+        <form id="formulario">
+            <label for="destino">Destino del viaje:</label>
+            <input type="text" id="destino" required>
+
+            <label for="duracion">Duración del viaje (días):</label>
+            <input type="number" id="duracion" required>
+
+            <label for="costoDiario">Costo diario estimado (en la moneda local):</label>
+            <input type="number" id="costoDiario" required>
+
+            <button type="submit">Calcular Presupuesto</button>
+        </form>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <!-- Incluir el script de la aplicación -->
+    <script src="JS/index.js"></script>
+
+    <footer>
+        <div class="copyright">
+            <p class="Pcopy">
+                © 2024 FlyForSky. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

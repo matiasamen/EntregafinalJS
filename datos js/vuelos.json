@@ -1,0 +1,17 @@
+[
+    {
+        "destino": "París",
+        "duracion": 5,
+        "costoDiario": 100
+    },
+    {
+        "destino": "Londres",
+        "duracion": 3,
+        "costoDiario": 150
+    },
+    {
+        "destino": "Nueva York",
+        "duracion": 7,
+        "costoDiario": 200
+    }
+]

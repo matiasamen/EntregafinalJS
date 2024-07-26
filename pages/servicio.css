@@ -1,0 +1,81 @@
+h1 {color: white; size-adjust: 20px; text-align: center;}
+
+body{background-image:url(/Imagenes/nature_landscape_airplane_window_cityscape_clouds_aerial_view_sunset-101740.jpg!d);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: 'Cinzel', serif;
+} 
+
+nav ul{ width: auto; list-style-type: none;text-align: right;  font-style:normal;}
+
+nav li{display:inline flex;}
+
+nav a {text-decoration: none;color: rgb(255, 255, 3); padding: 40px;font-size: x-large; font-family: 'Times New Roman', Times, serif; -webkit-text-stroke: 1.5px rgb(250, 204, 1); }
+
+
+.logo{height: 100px;width: 100px; border-radius: 80px;
+}
+header {
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.header-container {
+    color: rgba(210, 210, 205, 0.953);font-family:fantasy;-webkit-text-stroke: 0.29px rgba(127, 111, 51, 0.775);font-size:x-large;
+}
+
+.logo-container {
+    margin-right: auto; }
+
+    .contenedor {
+        overflow: hidden; }
+    
+    .imagen {
+        width: 193px; height:auto;
+        float: left; 
+        margin-right: 20px; 
+    }
+    
+    p {
+        margin-left:10px; 
+    color: rgb(255, 255, 255);}
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .contenedor {
+        flex: 1;
+    }
+    
+    footer {
+        margin-top: auto;
+        color: rgb(247, 0, 255);
+        padding: 20px;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+
+
+    .redes{text-align: center;}
+
+
+    footer .redes a {
+        color: rgba(110, 54, 200, 0.98);
+        text-decoration: none;
+        margin-right: 10px;}
+
+
+    strong{color: rgb(255, 0, 0);}
+
+
+    .Pcopy{color: rgb(255, 255, 3);}
+
+
+    .tituloRedes{color: rgba(238, 255, 3);}
+
+    h2{color: rgba(110, 54, 200, 0.98);}

@@ -1,0 +1,80 @@
+h1 { text-align: center;}
+
+body{background-image:url(../imagenes/nature_landscape_airplane_window_cityscape_clouds_aerial_view_sunset-101740.jpg!d);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+        font-family: 'Cinzel', serif;
+} 
+
+nav ul{ width: auto; list-style-type: none;text-align: right;  font-style:normal;}
+
+nav li{display:inline flex;}
+
+nav a {text-decoration: none;color: rgb(255, 255, 3); padding: 40px;font-size: x-large; font-family: 'Times New Roman', Times, serif; -webkit-text-stroke: 1.5px rgb(250, 204, 1); }
+
+
+.logo{height: 100px;width: 100px; border-radius: 80px;
+}
+header {
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    width: 20px;right: 20px;
+}
+
+.logo-container {
+    margin-right: auto; }
+
+
+
+h1 {
+    margin-top: 0;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+h2.hdos{color: white;}
+
+footer {
+    margin-top: auto;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+.redes{text-align: center;}
+
+
+footer .redes a {
+    color: rgba(110, 54, 200, 0.98);
+    text-decoration: none;
+    margin-right: 10px;}
+
+
+strong{color: rgb(255, 255, 3);}
+
+
+.Pcopy{color: rgba(110, 54, 200, 0.98);}
+
+
+.tituloRedes{color: rgba(255, 255, 3);}
+
+.ache2{color:rgb(255, 255, 3);}
+strong1{-webkit-text-stroke: 1.8px rgba(110, 54, 200, 0.98);}
+h1{color: rgba(210, 210, 205, 0.953);font-family:fantasy;-webkit-text-stroke: 0.29px rgba(127, 111, 51, 0.775);font-size:xxx-large;}
