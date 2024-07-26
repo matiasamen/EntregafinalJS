@@ -1,8 +1,8 @@
-// Librería Lodash ya cargada en el HTML
+
 
 let baseDeDatosViajes = [];
 
-// Constructor de Viaje
+
 function Viaje(destino, duracion, costoDiario, presupuestoTotal) {
     this.destino = destino;
     this.duracion = duracion;
@@ -10,32 +10,32 @@ function Viaje(destino, duracion, costoDiario, presupuestoTotal) {
     this.presupuestoTotal = presupuestoTotal;
 }
 
-// Función para guardar un viaje en localStorage
+
 function guardarViajeEnLocalStorage(viaje) {
     baseDeDatosViajes.push(viaje);
     localStorage.setItem('baseDeDatosViajes', JSON.stringify(baseDeDatosViajes));
 }
 
-// Cargar datos desde localStorage cuando se carga el documento
+
 document.addEventListener("DOMContentLoaded", function() {
     let viajesGuardados = localStorage.getItem('baseDeDatosViajes');
     if (viajesGuardados) {
         baseDeDatosViajes = JSON.parse(viajesGuardados);
     }
-    cargarDatos(); // Cargar datos del archivo JSON local
+    cargarDatos(); 
 });
 
-// Función para cargar datos desde el archivo JSON local
+
 function cargarDatos() {
     fetch('./datos js/vuelos.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error al cargar el archivo JSON');
             }
-            return response.json(); // Leer como JSON
+            return response.json(); 
         })
         .then(data => {
-            console.log('Datos cargados:', data); // Verifica que los datos se cargan
+            console.log('Datos cargados:', data); 
             mostrarDatos(data);
         })
         .catch(error => {
@@ -43,12 +43,12 @@ function cargarDatos() {
         });
 }
 
-// Función para mostrar los datos en el DOM
+
 function mostrarDatos(viajes) {
     const resultadoElement = document.getElementById("resultado");
-    resultadoElement.innerHTML = ''; // Limpia el contenido anterior
+    resultadoElement.innerHTML = ''; 
 
-    // Usando Lodash para ordenar los datos
+    
     const viajesOrdenados = _.sortBy(viajes, ['destino']);
 
     viajesOrdenados.forEach(viaje => {
@@ -63,7 +63,7 @@ function mostrarDatos(viajes) {
     });
 }
 
-// Manejar el formulario para calcular el presupuesto
+
 document.getElementById("formulario").addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -83,13 +83,13 @@ document.getElementById("formulario").addEventListener("submit", function(event)
     guardarViajeEnLocalStorage(viaje);
 });
 
-// Función para mostrar un mensaje de error
+
 function mostrarMensajeError(mensaje) {
     let resultadoElement = document.getElementById("resultado");
     resultadoElement.innerHTML = `<p class="error">${mensaje}</p>`;
 }
 
-// Función para mostrar el resultado del cálculo
+
 function mostrarResultado(destino, duracion, costoDiario, presupuestoTotal) {
     let resultadoElement = document.getElementById("resultado");
     resultadoElement.innerHTML = `
